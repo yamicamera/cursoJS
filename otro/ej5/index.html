@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <form  action="https://google.com.ar" method="" style="width: 300px;" id="frmPersona">
+        <fieldset>
+            <legend>Datos personales</legend>
+       
+        <table>
+            <tr>
+                    
+                <td><label for="txtNombre">Nombre: </label></td>
+                <td><input type="text" id="txtNombre" name="nombre" placeholder="Ingrese su nombre"></td>
+            </tr>
+            <tr>
+                <td><label for="txtApellido">Apellido: </label></td>
+                <td><input type="text" id="txtApellido" name="apellido" placeholder="Ingrese su apellido"></td>
+            </tr>
+            <tr>
+                <td><label for="txtEdad">Edad: </label></td>
+                <td><input type="text" id="txtEdad" name="edad" placeholder="Ingrese su edad"></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="genero" id="rdoMasculino" checked></td>
+                <td><label for="rdoMasculino">Masculino</label></td>
+            </tr>
+            <tr>
+                    <td><input type="radio" name="genero" id="rdoFemenino"></td>
+                    <td><label for="rdoFemenino">Femenino</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="Maneja" id="chkManeja"></td>
+                <td><label for="chkManeja">Maneja</label></td>
+            </tr>
+            <tr>
+                    <td><input type="checkbox" name="Nada" id="chkNada"></td>
+                    <td><label for="chkNada">Sabe nadar</label></td>
+                </tr>
+                <tr>
+                        <td><input type="checkbox" name="bicicleta" id="chkBici"></td>
+                        <td><label for="chkBici">Anda en Bici</label></td>
+                    </tr>
+            <tr>
+                <td><label for="selPais">Pais</label></td>
+                <td><select name="pais" id="selPais">
+                    <option value="ar">Argentina</option>
+                    <option value="br">Brasil</option>
+                    <option value="uy">Uruguay</option>
+                    <option value="py">Paraguay</option>
+                    <option value="cl">Chile</option>
+                </select></td>
+                
+            </tr>
+            <tr>
+                <td> <input type="submit" value="Alta Persona"> </td>
+                <td></td>
+            </tr>
+
+        </table>
+     </fieldset>
+
+    </form>
+    
+</body>
+</html>
