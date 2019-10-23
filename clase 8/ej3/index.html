@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array for each</title>
+    <script src="./personas.js"></script>
+</head>
+<body>
+    <button id="btn">1</button>
+    <button id="btn2">2</button>
+    <script>
+        let numeros = [2, 101, 30, 103, 34, 100];
+        let nombres = [ "Juan", "Andrea", "Miguel", "Zoilo"]; 
+
+/*  console.log ( numeros.some(function(a){
+        return a > 50;
+   })); */
+
+
+console.log(numeros.every(function(a){
+    return a % 2 == 0;
+}));
+
+var pares = numeros.filter(function(a){
+    return a % 2 == 0;
+});
+console.log(pares);
+
+let varones =[];
+for (let i=0; i < personas.length; i++){
+    if (personas[i].gender === 'Male'){
+        varones.push(personas[i]);
+    }
+}
+
+console.log (varones);
+
+/* let varonesFilter = personas.filter(function(persona){
+    return persona.gender === 'Male';
+}) */
+
+let varonesFilter = personas.filter(p => p.gender === 'Male');
+
+
+console.log(varonesFilter);
+
+let nombreMujeres =  personas.filter(p => p.gender === 'Female')
+                             .map(a=> a.first_name);
+    console.log(nombreMujeres);
+
+    </script>
+</body>
+</html>
