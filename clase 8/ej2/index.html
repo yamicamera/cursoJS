@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array for each</title>
+    <script src="./personas.js"></script>
+</head>
+<body>
+    <button id="btn">1</button>
+    <button id="btn2">2</button>
+    <script>
+        let numeros = [12, 1, 30, 10, 34, 100];
+        let nombres = [ "Juan", "Andrea", "Miguel", "Zoilo"]; 
+
+      /*  numeros.forEach(foo);
+
+       function foo(a, b, c) {
+
+           console.log(a);
+           console.log(b);
+           console.log(c);
+       }
+ */
+ console.log(numeros);
+      /*  for (let i=0; i < numeros.length; i++){
+           numeros[i] = 2 * numeros [i];
+       } */
+
+      /*  numeros.forEach(function(a, b){
+           numeros[b] = a*2;
+       }
+       ); */
+      /*  var dobles = []
+       numeros.forEach(function(a){
+           dobles.push( a*2);
+       }
+       ); */
+
+       var cuadrados = numeros.map( a=> a*a ); // es lo mismo que lo que hago a continuacion
+       var cuad = [];
+       for(let i=0; i < numeros.length; i++){
+           cuad.push(numeros[i]*numeros[i]);
+       }
+
+       nombreGen = personas.map(function(a){
+           return{nombre: a.first_name, genero: a.gender}
+       });
+
+       
+
+       console.log(nombreGen);
+
+       //console.log(cuadrados);
+       
+       
+
+    </script>
+</body>
+</html>

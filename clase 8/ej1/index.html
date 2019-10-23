@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./personas.js"></script>
+</head>
+<body>
+    <button id="btn">1</button>
+    <button id="btn2">2</button>
+    <script>
+        let numeros = [23, 45, 67, 32, 12, 100, 1000];
+        let nombres = [ "Juan", "Andrea", "Miguel", "Zoilo"]; 
+
+        console.log(numeros.sort());
+        console.log(nombres.sort());    
+
+        console.log(numeros.sort(function(a,b){
+            
+            return b-a;
+
+        }));
+
+        console.log(personas.sort(function(a,b){
+            if (a.first_name > b.first_name) {
+                return 1;
+            }
+            else {
+                return -1;
+            }
+        }))
+        console.log(personas.sort(function(a,b){
+
+            let swap = 1;
+            if(a.gender == b.gender && a.first_name.localeCompare(b.first_name)== -1) {
+                swap = -1;
+            }
+            else if (a.gender > b.gender) {
+                swap = -1;
+            }
+            return swap;
+        }))
+
+       /*  let boton = document.getElementById('btn');
+        let boton2 = document.getElementById('btn2');
+
+        boton.addEventListener('click', function(e){
+            e.target.setAttribute('style', "background:red");
+        })
+
+        boton2.addEventListener('click',cambiarColor);
+        function cambiarColor (e) {
+            e.target.setAttribute('style', "background:red");
+        }
+
+        boton2.addEventListener('click',mostrarValor);
+        boton.addEventListener('click',mostrarValor);
+
+        function mostrarValor (e){
+            console.log(e.target.textContent);
+        } */
+
+    </script>
+</body>
+</html>
